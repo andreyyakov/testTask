@@ -27,7 +27,7 @@ class CacheTest extends TestCase
 
     public function testDeleteValue() {
         $this->assertTrue($this->cache->delete($this->testKey));
-        $this->assertEmpty($this->cache->get($this->testKey));
+        $this->assertNull($this->cache->get($this->testKey));
     }
 
     public function testSetWrongKey() {
